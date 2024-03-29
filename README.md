@@ -45,4 +45,4 @@ npm test
 
 ### Deployment
 
-The app is configured with a simple GitHub Actions workflow. The CI/CD pipeline is triggered on every push or pull request to the main branch. It installs the dependencies, builds the app, and runs the tests across multiple Node.js versions.
+The app is configured with a simple GitHub Actions workflow. The CI pipeline is triggered on every push or pull request to the main branch. It installs the dependencies, builds the app, and runs the tests across multiple Node.js versions.
