@@ -32,11 +32,11 @@ function setup(app, students) {
   });
 
   function paramEmpty(p) {
-    if (typeof(p) != 'string')
+    if (typeof(p) != 'string') {
       return true;
-    if (p.trim().length === 0)
-      return true;
-    return false;
+    }
+
+    return p.trim().length === 0;
   }
 
   app.post('/add-student', function(req, res) {

@@ -12,7 +12,7 @@ suite('Add Students page', function() {
   test('Students HTML form', async function() {
     let res = await fetch("http://localhost:8888/add-student");
     let body = await res.text();
-    
+
     let nameFieldFound = body.includes('<input id="name" type="text" name="name"/>');
     assert.ok(nameFieldFound, "Field 'name' is missing");
 
@@ -35,8 +35,7 @@ suite('Add Students page', function() {
       }
     );
     let body = await res.text();
-    let studentsReturned = body.includes(
-		"<ul><li>Steve (steve@gmail.com)</li><li>Tina (tina@yahoo.com)</li><li>Peter (peter@gmail.com)</li></ul>");
+    let studentsReturned = body.includes("<ul><li>Steve (steve@gmail.com)</li><li>Tina (tina@yahoo.com)</li><li>Peter (peter@gmail.com)</li></ul>");
 
     assert.ok(studentsReturned, "Add student failed");
   });
@@ -60,7 +59,6 @@ suite('Add Students page', function() {
     res = await fetch("http://localhost:8888/");
     body = await res.text();
 
-	assert.ok(body.includes("Registered students: <b>2</b>"), 
-		"Add invalid student should not change the students count");
+	assert.ok(body.includes("Registered students: <b>2</b>"), "Add invalid student should not change the students count");
   });
 });

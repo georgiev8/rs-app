@@ -1,5 +1,14 @@
 [
-    {"name" : "Marry", "email" : "marry@gmail.com"},
-    {"name" : "Steve" , "email" : "steve@yahoo.com"},
-    {"name" : "Teddy" , "email" : "teddy@mail.ru"}
+    {
+        "name": "Filip",
+        "email": "filip@gmail.com"
+    },
+    {
+        "name": "Niya",
+        "email": "niya@yahoo.com"
+    },
+    {
+        "name": "George",
+        "email": "george@mail.ru"
+    }
 ]
