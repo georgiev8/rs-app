@@ -1,6 +1,6 @@
 ## Students Registry Demo App
 
-This is a simple web application built with Node.js and Express.js. It allows you to register students and view the list of registered students.
+This is a simple web application built with Node.js. It allows you to register students and view the list of registered students.
 
 ### Getting Started
 
